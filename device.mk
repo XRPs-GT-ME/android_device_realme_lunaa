@@ -35,6 +35,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946741972277890.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946741972277890.xml
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.brightness.low.gamma=true
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.st \
