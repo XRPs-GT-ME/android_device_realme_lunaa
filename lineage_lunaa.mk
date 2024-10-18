@@ -11,18 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lunaa device
 $(call inherit-product, device/realme/lunaa/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Environment Flags
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+# TenX
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_BCR := true
+WITH_GMS := true
+PRODUCT_NO_CAMERA := true
+TENX_BUILD_TYPE := Custom
 
 #Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_lunaa
+PRODUCT_NAME := lineage_lunaa
 PRODUCT_DEVICE := lunaa
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
