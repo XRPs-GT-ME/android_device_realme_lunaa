@@ -11,6 +11,7 @@ DEVICE_PATH := device/realme/lunaa
 
 # Display
 TARGET_SCREEN_DENSITY := 480
+SOONG_CONFIG_qtidisplay_udfps := true
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus_yupik_QGKI.config
