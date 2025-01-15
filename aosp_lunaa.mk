@@ -14,6 +14,8 @@ $(call inherit-product, device/realme/lunaa/device.mk)
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 # Environment Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_STOCK_ARCORE := true
